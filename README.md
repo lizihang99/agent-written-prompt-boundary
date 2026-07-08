@@ -16,7 +16,7 @@ A Codex skill for designing product runtime prompts without leaking development 
 - 只是猜测或建议的东西，放到 `proposed-assumption`
 - 没用或会污染模型的内容，直接排除
 
-它特别防一种常见问题：代理为了“更完整”，擅自发明 JSON schema、枚举值、字段、安全触发条件或业务规则。
+它也会防一个常见坑：代理为了“更完整”，擅自发明没有证据支持的 JSON schema、枚举值、字段、安全触发条件或业务规则。
 
 The core idea is simple: prompt work is information routing. Every fact should land in the cheapest artifact that preserves its value:
 
